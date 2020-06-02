@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frozen Desserts Recipes|McDizzys</title>
+<link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+	<div class="menu-wrap">
+		<nav class="menu">
+            <ul class="topnav" id="mytopnav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="desserts.html">Desserts</a></li>
+              <li><a href="">Desserts Recipes<span class="arrow">&#9660;</span></a>
+              
+          	<ul class="sub-menu">
+               <li><a href="custards_recipes.html">Custard Dessserts Recipes</a></li> 
+               <li><a>Puddings Recipes</a></li> 
+               <li><a href="frozendesserts_recipes.html">Frozen Desserts Recipes</a></li>  
+               <li><a href="cakes_recipes.html">Cakes Recipes</a></li> 
+               <li><a>Cookies Recipes</a></li> 
+               <li><a>Pies Recipes</a></li> 
+               <li><a>Chocolates Recipes</a></li>
+               <li><a>Candies Recipes</a></li>  
+               <li><a>Pastries Recipes</a></li> 
+               <li><a>Miscellaneous Desserts Recipes</a></li> 
+               <li><a>Drinks Recipes</a></li> 
+               <li><a>Smoothies Recipes</a></li>           
+            </ul>    
+          </li>
+
+          <li><a href="#contact">Gallery<span class="arrow">&#9660;</span></a>
+              
+          	<ul class="sub-menu">
+               <li><a href="imagegallery.html">Images</a></li> 
+               <li><a>Videos</a></li>
+          	</ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact_us_form.html">Contact Us</a></li>
+		  <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+
+          	
+        <form method="get" action="http://www.google.com/search"> 
+        	<input type="text" name="search" size="31" maxlength="255" value="" placeholder=".." />
+            <input type="submit" value="Go" style="margin-top:10px;" />
+            <input type="radio" name="sitesearch" value="mcdizzys.com" style="visibility:hidden"" checked /><br /> 
+        </form>
+
+
+        </ul>        
+        </nav>
+  </div>
+	    
+  <script>
+        function myFunction() {
+            var x = document.getElementById("mytopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+		
+		(".subnav").hide();
+		(".topnav li a, .subnav").hover(function(){
+				(this).parent().find("subnav").stop().fadeIn(400);}, function(){(this).parent().find(".subnav").stop().fadeOut(400);
+				});
+        </script>
+        
+        
+          
+<header class="header1">
+	<div class="headermain">
+        <div id="headercontainer"><img src="images/websitelogo.png" height="118" />           
+        </div>
+      <div id="headercontainer2">
+       	<h1>MCDIZZYS</h1>
+       </div>
+       
+    </div>   
+</header>
+<div id="accordioncontainer" style="margin-top:9px;">
+	<div style="height:70px; background-color:white;">
+	<h3 style="text-align:center">Frozen Desserts Recipes</h3>
+	</div>
+    <button class="accordion">
+    <h2> Ice Cream Recipes</h2>
+    </button>
+<div class="panel" >
+    <div id="icecream">
+    <h3>Vanilla Ice Cream</h3>
+    
+    <img src="images/vanillaicecream.jpg" width="300" height="428"/>
+  
+  <h3> Recipes</h3>
+  <li>3/4 cup white sugar</li> 
+  <li>1 cup heavy whipping cream</li>
+  <li>2 1/4 cups milk</li>
+  <li>2 teaspoons vanilla extract</li>
+  <h3> Directions</h3>
+  <p> 
+Stir sugar, cream, and milk into a saucepan over low heat until sugar has dissolved. Heat just until mix is hot and a small ring of foam appears around the edge.
+Transfer cream mixture to a pourable container such as a large measuring cup. Stir in vanilla extract and chill mix thoroughly, at least 2 hours. (Overnight is best.)
+Pour cold ice cream mix into an ice cream maker, turn on the machine, and churn according to manufacturer's directions, 20 to 25 minutes.
+When ice cream is softly frozen, serve immediately or place a piece of plastic wrap directly on the ice cream and place in freezer to ripen, 2 to 3 hours.
+ </p>
+   </div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+<footer id="footer" style="height:30%;">
+    
+   <h4 style="padding-left:20px;">QUICK LINKS</h4>
+    <div>
+    <div id="link1">
+    <li>Puddings Recipes</li>
+    <li>Videos</li>
+     <li><a href="custards_recipes.html">Custards Recipes</a></li>
+     <li><a href="desserts.html">Desserts</a></li>
+     <li><a href="frozendesserts_recipes.html">Frozen Desserts Recipes</a></li>
+     </div>
+     <div id="link2">
+       <li><a href="imagegallery.html">Images</a></li>
+     <li><a href="cakes_recipes.html">Cakes Recipes</a></li>
+    <li>Pies</li>
+     <li>Cakes</li>
+    <li>Pies</li>
+    </div>
+  </div>
+    
+	  <nav id="bottomnav"> 
+    <ul>
+    	
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact_us_form.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    </nav>
+    <div id="socialmedia">
+    <h6>Social Media Accounts</h6>
+    <a href=""><img src="../174834-social-media-logos2/174834-social-media-logos/png/005-whatsapp.png" width="20px" height="20px" title="Whatsapp Handle/+2348140740826" /></a>
+    <a href="http://www.twitter.com"><img src="../174834-social-media-logos2/174834-social-media-logos/png/008-twitter.png" width="20px" height="20px" title="Twitter Handle/@marrockx99" /></a>
+	<a href=""><img src="../174834-social-media-logos2/174834-social-media-logos/png/014-snapchat.png" width="20px" height="20px" title="Snapchat Handle/@marrocks" /></a>
+    <a href="http://www.instagram.com/marrocks99" target="_blank"><img src="../174834-social-media-logos2/174834-social-media-logos/png/029-instagram.png" width="20px" height="20px" title="Instagram Handle/@marrocks99" /></a>
+    <a href="https://www.youtube.com/channel/UC8PGDQrS3XGtwcezeDb1L3Q/"><img src="../174834-social-media-logos2/174834-social-media-logos/png/001-youtube.png" width="20px" height="20px"  title="YouTube Handle/Mariam Adekola"/></a>
+    <a href="http://www.facebook.com"><img src="../174834-social-media-logos2/174834-social-media-logos/png/036-facebook.png" width="20px" height="20px" title="facebook Username/McDizzys" /></a>
+    </div>
+
+    <p style="margin-left:5px;">&copy; Copyright 2017 McDizzys. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+
+
+</html>
