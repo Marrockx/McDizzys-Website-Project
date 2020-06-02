@@ -1,0 +1,719 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color:#FFCCCC; 
+	padding:0; margin:0;
+}
+
+#maincontainer {
+	width: 90%;
+	background-color: #FFFF99;
+	margin: auto;
+	padding: 16px;
+	height: auto;
+	
+}
+header {
+	z-index:0;
+	width:102%;
+	height: 195px;
+	background-color:#EBEBEB;
+	position:relative;
+	top:40px;
+	bottom:50px;
+	
+
+}
+#headermain{
+	
+	background-color:#EBEBEB;
+	min-height:400px;
+	margin-left:20px;
+	
+	
+	
+}
+#headercontainer {
+	position:relative;
+	bottom:0;
+	background-color:#EBEBEB;
+	
+	z-index:0;
+	
+	max-width:60%;
+	min-width:200px;
+	margin-right: 100px;
+	padding-left:60px;
+	
+}
+#headercontainer img {
+	padding-top:20px;
+	
+}
+#headercontainer2{
+	max-width:40%;
+	min-width:320px;;
+	background-color:#EBEBEB;
+	height: 55px;
+	overflow:hidden;
+	width:2px;
+	
+	
+	
+}
+
+#headercontainer, #headercontainer2 {
+	float:left;
+}
+h1 {
+	z-index:2;
+	margin-left:40px;
+	overflow:hidden;
+	display:inline-block;
+	margin-top: 17px;
+	font-size:40px;
+	
+	text-shadow: 0 0 3px #FF0000;
+	color:#660000;
+}
+
+.menu-wrap {
+		position:fixed;
+		z-index:2;
+		top:0;
+		width: 100%;
+		text-align:left;
+		background-color:#333;
+	}
+.menu {
+		width:100%;
+		margin: 0px;
+		text-align:left;
+	}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu li {
+    float: left;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	transition:all linear 0.15s;
+	color:white;
+
+}
+
+.menu li a  {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+	transition:0.3s;
+	cursor:pointer;
+}
+
+
+.menu li:hover > a, .mennu .current-item > a {
+		text-decoration:none;
+		color:white;
+		background-color:#FF6600;
+	}
+	.menu .arrow {
+		font-size:16px;
+		line-height:0%;
+	}
+	.menu > ul > li {
+		float: left;
+		display:inline-block;
+		position:relative;
+		font-size:16px;
+	}
+	.menu > ul > li > a {
+		padding: 10px 40px;
+		display:inline-block;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0.4);
+		text-decoration: none;
+	}
+	
+	.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+		background:#10345A;
+		color: #FF6600;
+	}
+	
+	
+	@-webkit-keyframes fadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+	.menu li:hover .sub-menu {
+		z-index:1;
+		display:block;
+		-webkit-animation: fadeIn 0.15s;
+	}
+	.sub-menu {
+		
+		padding: 5px 0px; 
+		position:absolute;
+		top:100%;
+		left: 0px; 
+		z-index: 0;
+		background: gray;
+		display:none;
+	}
+	.sub-menu li {
+		display:block;
+		font-size: 16px;
+		
+	}
+	.sub-menu li a {
+		padding: 10px 30px;
+		display:block;
+		text-decoration:none;
+		width: 200px;
+	}
+	.sub-menu li a:hover, .sub-menu .current-item a {
+		
+		color: #FF6600;
+	}
+.menu ul.topnav li a:hover ,  .dropdown:hover .dropbtn{
+	background-color: #555;
+}
+
+
+.menu ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+ .menu ul.topnav li:not(:first-child) {display: none;}
+ .menu ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .menu ul.topnav.responsive {
+	  position: relative;
+
+ 
+}
+  .menu ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu ul.topnav.responsive li {
+    float: none;
+    display: inline;
+	
+  }
+  .menu ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.menu input[type=text] {
+    width: 70px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../images/searchicon.png);
+ 	background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 0px 20px 10px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	margin:0.5px;
+	
+}
+.menu input[type=text]:focus {
+    width: 25%;
+	background-color:#999;
+}
+
+
+
+	
+	
+article#content {
+	overflow:auto;
+	width:78%;
+	color:#000;
+	background-color:#CC3300;
+	
+}
+#content div{
+	border-bottom:1px solid;
+	padding:10px 30px 10px;
+	background-color:white;
+	font-size: 24px;
+}
+#content div p{
+	font-size:20px;
+}
+ 
+aside#rightsidebar {
+	
+	width:22%;
+	
+	background-color:#FF9966;
+	
+}
+
+#rightsidebar ,  #content { 
+	float:left;
+	overflow:auto;
+	height:95%;
+}
+aside#rightsidebar div#facts {
+	font-size:15px;
+}
+/* Styles for Facts */
+#facts {
+	
+}
+/* Contact Us Page */
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/* Styles for Contsact Page */
+/* Style inputs with type="text", select elements and textareas */
+.contact_form input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.contact_form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	width:50%;
+	
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact_form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact_form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Styles for the Newsletter Modal pop-up */
+#newsletter input[type=text],input[type=email] ,select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+}
+
+#newsletter input[type=submit] {
+    width: 75%;
+    background-color: #C00;
+    color: white;
+   	height:40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	font-size:14px;
+	font:bolder;
+}
+
+#newsletter input[type=submit]:hover {
+    background-color: #F00;
+}
+
+#newsletter {
+    background-color: ;
+    padding: 20px;
+}
+
+/* Set a style for all buttons */
+#rightsidebar button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 15px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+.formcontainer {
+    padding: 16px;
+	background-color:#FF6;
+	
+}
+
+
+/* The Modal (background) for Newsletter */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+	
+}
+
+#modal-dialog {
+	overflow-y: initial;
+}
+
+/* Modal Content/Box for the Newsletter */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+	max-height: 80vh; /* vh means viewport heght of device */
+	overflow-y:auto;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+/* Slideshow */
+.mySlides {
+	display:none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin:auto;
+  margin-top:40px;
+}
+
+/* Caption text */
+.text {
+  color: #F60;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 240px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+
+#accordioncontainer {
+	margin-top: 10px;
+	overflow:auto;
+	
+}
+
+button.accordion {
+    background-color: #FFFF99;
+    color: #FF0000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+	border-bottom:1px solid #FF0000;
+}
+
+button.accordion:last-child {
+	border-bottom:none;
+}
+button.accordion.active, button.accordion:hover {
+	background-color:#990000;
+	color:#FFFF33;
+
+}
+
+button.accordion:after {
+    content: '\002B';
+    color:#FF0000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: auto;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+#custards_recipes {
+	background-color:white;
+}
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;  
+}
+div.panel h3 , #accordioncontainer h3 {
+	font-size:30px;
+}
+
+#pudding img {
+	float:right;
+}
+#custard img, #cakes img, #whitecake img, #cookies img, #icecream img, #spanishflan img, #cremecaramel img {
+	
+	float:left;
+}
+#custards_puddings {
+	padding-top: 20px;
+	margin-top:20px;
+	
+}
+#flan {
+	margin-top:-15px;
+}
+#pudding {
+	margin-top:130px;
+	
+}
+
+/* MCDIZZYS About Page */
+#about {
+	margin-top:40px;
+	background-color:white;
+	background-image:url(../images/favicon.png);
+	background-position:0px 2px;
+	height:60%;
+	
+}
+
+/* Image Gallery */
+
+div#img_container {
+	background-color:white;
+	margin-top:40px;
+}
+
+div.img {
+    border: 1px solid #ccc;
+}
+#img_container img {
+	width:254px;
+	height:200px;
+}
+
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 20%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* This is the footer section of the page */
+footer {
+	padding-top:1px;
+	width: 100%;
+	height:340px;
+	clear: both;
+	background-color: #333;
+	color: #999;
+	
+}
+#link1 {
+	
+}
+#link1, #link2 {
+	float:left;
+	padding: 10px 40px 20px 30px;
+	
+	
+}
+#bottomnav ul {
+	margin-top: 60px;
+	clear:left;
+}
+#bottomnav ul li{
+	list-style:none;
+}
+#bottomnav ul li a {
+	float:left;
+	padding:20px;
+	padding-top:10px;
+	background-color:#333;
+	
+}
+#socialmedia {
+	float:right;
+	
+	padding-right:40px;
+	
+}
+#footer p {
+	margin-top: 95px;
+	
+	
+}
