@@ -1,6 +1,6 @@
 ## My First Web Project
 
-This was my project with web development using HTML, and legacy codes layout for CSS
+This was my first project (2017) built on web development using HTML, and legacy codes layout for CSS
 
 ### Jekyll Themes
 
